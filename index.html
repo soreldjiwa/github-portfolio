@@ -118,6 +118,9 @@
       border: 1px solid #d8e2ed;
     }
 
+    .resume-viewer { margin-top: 18px; }
+    .resume-viewer iframe { width: 100%; height: 650px; border: 1px solid #d8e2ed; border-radius: 8px; }
+
     .project-links {
       margin-top: 12px;
     }
@@ -229,6 +232,18 @@
         particularly interested in using technology to improve
         organizational efficiency, information security,
         and operational decision-making.
+      </p>
+
+      <p>
+        I am building a portfolio of hands-on projects that demonstrate
+        how I learn, test, and document software. My AI Study Assistant
+        introduced me to local language models and responsive desktop
+        interfaces, while my Personal Expense Tracker gave me experience
+        with data validation and persistent file storage. As I progress
+        through my degree, I plan to deepen my understanding of secure
+        application development, database systems, and practical IT support.
+        I value clear documentation and reliable solutions that other
+        people can understand and use.
       </p>
     </section>
 
@@ -358,30 +373,27 @@
 
       <!-- PROJECT 3 -->
       <div class="project">
-        <h3>Project 3: Employee Database Management</h3>
-
+        <h3>Project 3: Personal Expense Tracker</h3>
         <p>
-          Developed a MySQL database project involving
-          employee and department tables, relational
-          database constraints, views, stored procedures,
-          triggers, and salary management.
+          Developed a personal desktop application to record income and expenses,
+          organize transactions by category, and calculate total income, total
+          expenses, and the remaining balance.
         </p>
-
         <p>
-          The project demonstrates database design,
-          data retrieval, automated salary logging,
-          employee transfers, and validation rules.
+          The application features a Tkinter graphical interface, input
+          validation, transaction deletion, and CSV file storage so records
+          can be saved and loaded between sessions.
         </p>
-
-        <p>
-          <strong>Technologies:</strong>
-          SQL, MySQL Workbench
-        </p>
-
-        <p class="note">
-          The SQL source file and project screenshots
-          can be linked here when uploaded to GitHub.
-        </p>
+        <p><strong>Technologies:</strong> Python, Tkinter, CSV</p>
+        <a class="button"
+           href="https://github.com/soreldjiwa/github-portfolio/tree/main/Personal_Expense_Tracker"
+           target="_blank" rel="noopener noreferrer">
+          View Personal Expense Tracker Source Code
+        </a>
+        <img src="Personal_Expense_Tracker/personal_expense_tracker_screenshot.png"
+             alt="Personal Expense Tracker showing sample income, expenses and balance"
+             loading="lazy">
+        <p class="note">Screenshot uses sample transactions, not personal financial data.</p>
       </div>
 
     </section>
@@ -389,19 +401,19 @@
     <!-- RESUME -->
     <section id="resume">
       <h2>Professional Resume</h2>
-
-      <p>
-        View or download my professional resume to learn
-        more about my education, technical skills,
-        professional experience, and qualifications.
-      </p>
-
-      <a class="button"
-         href="resume.pdf"
-         target="_blank"
-         rel="noopener noreferrer">
-        View My Resume (PDF)
+      <p>View or download my resume for details about my education,
+         technical skills, projects, experience, and qualifications.</p>
+      <a class="button" href="resume.pdf" target="_blank"
+         rel="noopener noreferrer">View Resume in New Tab</a>
+      <a class="button" href="resume.pdf" download="Brice_Nyindie_Djiwa_Resume.pdf">
+        Download Resume (PDF)
       </a>
+      <div class="resume-viewer">
+        <iframe src="resume.pdf" title="Professional resume PDF preview"
+                loading="lazy"></iframe>
+        <p class="note">If the preview does not appear on your device,
+           use the View Resume button above.</p>
+      </div>
     </section>
 
     <!-- CONTACT -->
